@@ -1,0 +1,198 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Overpass", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  height: 100vh;
+  background: hsl(216, 12%, 8%);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+.orange {
+  color: hsl(25, 97%, 53%);
+}
+
+.white {
+  color: #fff;
+}
+
+.light-grey {
+  color: hsl(217, 12%, 63%);
+}
+
+.medium-grey {
+  color: hsl(216, 12%, 54%);
+}
+
+.dark-blue-background {
+  background: hsl(213, 19%, 16%);
+}
+
+.very-dark-blue- {
+  color: hsl(216, 12%, 8%);
+}
+
+.card-review {
+  width: 385px;
+  padding: 30px 30px;
+  border-radius: 30px;
+  display: grid;
+  gap: 20px;
+}
+
+.card-review img {
+  background: #262f38;
+  padding: 15px;
+  border-radius: 50%;
+}
+
+.card-review .text h1 {
+  font-size: 25px;
+  padding: 10px 0;
+}
+
+.card-review .text p {
+  font-size: 15px;
+}
+
+.card-review .rate ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-review .rate ul li .btn {
+  background: #262f38;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: hsl(216, 12%, 54%);
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+  border: 0;
+}
+
+.card-review .rate .btn:hover {
+  background: hsl(25, 97%, 53%);
+  color: white;
+}
+
+.card-review .rate ul li button:focus {
+  background: #7d8798;
+  color: #edf3fc;
+}
+
+.card-review .button {
+  color: white;
+  background: hsl(25, 97%, 53%);
+  border: 0;
+  padding: 10px;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.card-review .button:hover {
+  color: hsl(25, 97%, 53%);
+  background: white;
+}
+
+.thank-you {
+  width: 385px;
+  padding: 40px 30px;
+  border-radius: 30px;
+  display: grid;
+  gap: 10px;
+  text-align: center;
+  justify-content: center;
+  display: none;
+}
+
+.thank-you img {
+  margin-inline: auto;
+}
+
+.thank-you .rate-selected p {
+  margin: 30px 0 20px;
+  background: #262f38;
+  width: fit-content;
+  margin-inline: auto;
+  padding: 10px 20px;
+  line-height: 50%;
+  border-radius: 20px;
+  font-size: 15px;
+}
+
+.thank-you-head {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+@media (max-width: 530px) {
+  .card-review,
+  .thank-you {
+    width: 330px;
+  }
+
+  .card-review {
+    padding: 30px 20px;
+  }
+}
